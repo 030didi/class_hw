@@ -4,12 +4,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>盧品諭個人網站</title>
+    <style>
+        @import url(./css/index.css);
+    </style>
+    <script src="./JS/index.js"></script>
 </head>
 
 <body>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quo incidunt ab eum quod obcaecati similique, optio
-    earum dolorem eaque nobis ex, harum id animi repellat inventore, fugit explicabo? Commodi.
+    <header>
+        <div class="menu-links">
+            <ul class="toggle-menu">
+                <li class="toggle">
+                    <span class="toggle-menu-bar"></span>
+                    <span class="toggle-menu-bar"></span>
+                    <span class="toggle-menu-bar"></span>
+                </li>
+                <li class="content" style="display: none;">
+                    <ul>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact-me">Contact Me</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="Top" class="display">
+        <!-- 黑線區塊 -->
+        <div id="line1" class="black-line" style="top: 22px;"></div>
+        <div id="line2" class="black-line" style="top: 44px;"></div>
+        <!-- 其餘線條依需求加入 -->
+        <!-- 文字區塊 -->
+        <div class="words">
+            <div id="line9a" class="word-line" style="top: 0px;">Alfred Hitchcock's</div>
+            <div id="line9b" class="word-line" style="top: 0px;">Alfred Hitchcock's</div>
+            <div id="line9c" class="word-line" style="top: 0px;">Alfred Hitchcock's</div>
+            <div id="line9d" class="word-line" style="top: 0px;">PSYCHO</div>
+            <div id="line9e" class="word-line" style="top: 0px;">PSYCHO</div>
+            <div id="line9f" class="word-line" style="top: 0px;"></div>
+        </div>
+    </section>
+
+    <main>
+        <article id="about-me" class="article">
+            <section>
+                <img id="img_person" src="./img/4.jpg" alt="淑女">
+                <!-- 左側人物介紹 -->
+                <div class="person">
+                    <div class="buttons">
+                        <button onclick="document.getElementById('img_person').src='./img/1.jpg'">妖豔</button>
+                        <button onclick="document.getElementById('img_person').src='./img/3.jpg'">反差</button>
+                        <button onclick="document.getElementById('img_person').src='./img/4.jpg'">淑女</button>
+                    </div>
+                    <div class="introduce">
+                        <h1>盧品諭</h1>
+                        <h4>甲K大師</h4>
+                        <p>來自宇宙中某顆連名字都懶得記的星球，為了成為全宇宙頂尖的協咖，毅然踏上這條充滿尷尬與失敗的不歸路。
+                        </p>
+                        <ul class="tag">
+                            <h5>個性</h5>
+                            <li class="g">體悟人生大師</li>
+                            <li class="g">喜劇演員</li>
+                            <li class="g">藝術家</li>
+                            <li class="g">金剛芭比</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
+                <!-- 右側人物細項介紹 -->
+                <div class="text text1">
+                    <h2>隸屬：資訊管理學系</h2>
+                    <div class="lv">
+                        <h2>Lv：二乙</h2>
+                    </div>
+                </div>
+                <!-- 狀態欄 -->
+                <div class="style1">狀態值：</div>
+                <div class="skill-bar-container">
+                    <div class="skill-bar">
+                        <div class="content">
+                            <p>搞耍</p>
+                            <p>87%</p>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="content">
+                            <p>躺平</p>
+                            <p>80%</p>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="content">
+                            <p>社畜</p>
+                            <p>∞</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 座右銘 -->
+                <div class="style2">
+                    <span>盧氏宣言：</span>
+                    <span>解決不了問題，只好解決出問題的人！！</span>
+                </div>
+                <!-- 技能skills -->
+                <div class="style1">技能屬性</div>
+                <ul>
+                    <li>JAVA</li>
+                    <li>Python</li>
+                    <li>DIY</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </section>
+        </article>
+
+        <article id="skills">
+            <h2>My Skills</h2>
+            <section>
+                <div class="skills-list">
+                    <div class="skill-col">
+                        <p>JAVA</p>
+                        <div class="skill-line"></div>
+                        <p>60%</p>
+                    </div>
+                    <div class="skill-col">
+                        <p>Python</p>
+                        <div class="skill-line"></div>
+                        <p>87%</p>
+                    </div>
+                    <div class="skill-col">
+                        <p>HTML</p>
+                        <div class="skill-line"></div>
+                        <p>65%</p>
+                    </div>
+                    <div class="skill-col">
+                        <p>CSS</p>
+                        <div class="skill-line"></div>
+                        <p>65%</p>
+                    </div>
+                    <div class="skill-col">
+                        <p>DIY</p>
+                        <div class="skill-line"></div>
+                        <p>88%</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <article id="experience">
+            <h2>Experience</h2>
+            <section>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <img src="project1.png" alt="Project Image">
+                        <div class="content">
+                            <h3>造夢者</h3>
+                            <span class="style1">日期：2023/11/26</span>
+                            <p>
+                                第一次做志工，在假日去服務國小小朋友。運用微型處理器
+                                Micro-bit，帶出三個活動：寶藏躲貓貓、基本操作教學、電子音樂盒。透過這個活動，學生可以學習如何使用簡單的編程語言來創建互動性強大的項目，從而培養邏輯思考和問題解決的能力。
+                            </p>
+                        </div>
+                    </div>
+            </section>
+
+            <section>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <img src="project1.png" alt="Project Image">
+                        <div class="content">
+                            <h3>解決問題能力競賽：讓我們解決你</h3>
+                            <span class="style1">日期：2024/9/25</span>
+                            <p>隨著科技與醫療高速進步，整個世界邁入高齡化社會；年齡的增長，長者的身體機能逐漸退化，獨居且行動不便的長者對於孤獨感的議題愈發需要正視，此議題正在當今社會逐漸浮出水面，我們Z世代(
+                                1997 ～
+                                2009年出生)在未來勢必得面對更強大的海浪向我們襲來。因此，我們團隊「讓我們來解決你」，集思廣益運用現在正在發展的擴增實境（AR）和虛擬現實（VR）混合實境技術，為行動不便者、身心障礙者以及獨居的高齡者提供解決方案。透過虛實結合的科技技術，我們將無法外出的長者與親友的外出旅遊相連結，讓在家無法外出的長者也能享受到旅遊的樂趣。
+                            </p>
+                        </div>
+                    </div>
+            </section>
+
+            <section>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <img src="project1.png" alt="Project Image">
+                        <div class="content">
+                            <h3>物聯網醫學專題</h3>
+                            <span class="style1">日期：現在進行式</span>
+                            <p>本研究旨在利用 YOLOv8-OBB 模型精確標示環口片中牙齒的缺口路徑。首先將具有缺牙的環口片進行影像前處理，包含高斯模糊處理及邊緣檢測，再來透過該 YOLO
+                                模型判斷牙齒缺損區域，並結合周圍健康牙齒的像素位置信息，分析出缺牙處的最佳植牙路徑，為後續的植牙手術提供有效的輔助決策工具。此技術在病人初診時，可於短時間內生成適合的植牙路徑，提供一初步治療之方向。
+                            </p>
+                        </div>
+                    </div>
+            </section>
+
+            <section>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <img src="project1.png" alt="Project Image">
+                        <div class="content">
+                            <h3>手做DIY作品</h3>
+                            <span class="style1">日期：某時某刻開始做</span>
+                            <p>
+                                利用毛線編織成娃娃/杯墊，還在努力晉身成為毛線藝術家。
+                            </p>
+                        </div>
+                    </div>
+            </section>
+        </article>
+    </main>
+
+    <footer id="contact-me" class="section">
+        <h2>Contact Me</h2>
+        <div class="social-links">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="email.png" alt="Email"></a>
+        </div>
+    </footer>
 </body>
 
 </html>
