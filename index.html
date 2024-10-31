@@ -9,6 +9,7 @@
         @import url(./css/index.css);
     </style>
     <script src="./JS/index.js"></script>
+    <iconify-icon icon="mdi:home" noobserver></iconify-icon>
 </head>
 
 <body>
@@ -22,10 +23,10 @@
                 </li>
                 <li class="content" style="display: none;">
                     <ul>
-                        <li><a href="#about-me">About Me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#contact-me">Contact Me</a></li>
+                        <li><a class="a" href="#about-me">About Me</a></li>
+                        <li><a class="a" href="#skills">Skills</a></li>
+                        <li><a class="a" href="#experience">Experience</a></li>
+                        <li><a class="a" href="#contact-me">Contact Me</a></li>
                     </ul>
                 </li>
             </ul>
@@ -49,8 +50,8 @@
     </section>
 
     <main>
-        <article id="about-me" class="article">
-            <section>
+        <article id="about-me" class="article1">
+            <section class="box1">
                 <img id="img_person" src="./img/4.jpg" alt="淑女">
                 <!-- 左側人物介紹 -->
                 <div class="person">
@@ -76,50 +77,60 @@
             </section>
 
 
-            <section>
+            <section class="box2">
                 <!-- 右側人物細項介紹 -->
-                <div class="text text1">
-                    <h2>隸屬：資訊管理學系</h2>
-                    <div class="lv">
-                        <h2>Lv：二乙</h2>
-                    </div>
-                </div>
-                <!-- 狀態欄 -->
-                <div class="style1">狀態值：</div>
-                <div class="skill-bar-container">
-                    <div class="skill-bar">
-                        <div class="content">
-                            <p>搞耍</p>
-                            <p>87%</p>
+                <div class="about about_border">
+                    <div class="text text1">
+                        <h2>隸屬：資訊管理學系</h2>
+                        <div class="lv">
+                            <h2>Lv：二乙</h2>
                         </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="content">
-                            <p>躺平</p>
-                            <p>80%</p>
+                    <!-- 狀態欄 -->
+                    <div class="style1">狀態值：</div>
+                    <ur class="base">
+                        <div class="skill-bar-container">
+                            <li>
+                                <div class="skill-bar">
+                                    <div class="content">
+                                        <p>搞耍</p>
+                                        <p>87%</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-bar">
+                                    <div class="content">
+                                        <p>躺平</p>
+                                        <p>80%</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-bar">
+                                    <div class="content">
+                                        <p>社畜</p>
+                                        <p>∞</p>
+                                    </div>
+                                </div>
+                            </li>
                         </div>
+                    </ur>
+                    <!-- 座右銘 -->
+                    <div class="style2">
+                        <span>盧氏宣言：</span>
+                        <span>解決不了問題，只好解決出問題的人！！</span>
                     </div>
-                    <div class="skill-bar">
-                        <div class="content">
-                            <p>社畜</p>
-                            <p>∞</p>
-                        </div>
-                    </div>
+                    <!-- 技能skills -->
+                    <div class="style1">技能屬性</div>
+                    <ul>
+                        <li>JAVA</li>
+                        <li>Python</li>
+                        <li>DIY</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
                 </div>
-                <!-- 座右銘 -->
-                <div class="style2">
-                    <span>盧氏宣言：</span>
-                    <span>解決不了問題，只好解決出問題的人！！</span>
-                </div>
-                <!-- 技能skills -->
-                <div class="style1">技能屬性</div>
-                <ul>
-                    <li>JAVA</li>
-                    <li>Python</li>
-                    <li>DIY</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
             </section>
         </article>
 
@@ -161,7 +172,7 @@
             <section>
                 <div class="experience-list">
                     <div class="experience-item">
-                        <img src="project1.png" alt="Project Image">
+                        <img src="./img/project1.jpeg" alt="Project Image">
                         <div class="content">
                             <h3>造夢者</h3>
                             <span class="style1">日期：2023/11/26</span>
@@ -176,7 +187,7 @@
             <section>
                 <div class="experience-list">
                     <div class="experience-item">
-                        <img src="project1.png" alt="Project Image">
+                        <img src="./img/project2.JPG" alt="Project Image">
                         <div class="content">
                             <h3>解決問題能力競賽：讓我們解決你</h3>
                             <span class="style1">日期：2024/9/25</span>
@@ -191,7 +202,7 @@
             <section>
                 <div class="experience-list">
                     <div class="experience-item">
-                        <img src="project1.png" alt="Project Image">
+                        <img src="" alt="Project Image">
                         <div class="content">
                             <h3>物聯網醫學專題</h3>
                             <span class="style1">日期：現在進行式</span>
@@ -205,7 +216,7 @@
             <section>
                 <div class="experience-list">
                     <div class="experience-item">
-                        <img src="project1.png" alt="Project Image">
+                        <img src="" alt="Project Image">
                         <div class="content">
                             <h3>手做DIY作品</h3>
                             <span class="style1">日期：某時某刻開始做</span>
@@ -221,9 +232,8 @@
     <footer id="contact-me" class="section">
         <h2>Contact Me</h2>
         <div class="social-links">
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="email.png" alt="Email"></a>
+            <iconify-icon icon="devicon:facebook" width="200" height="200"></iconify-icon>
+            <iconify-icon icon="skill-icons:instagram" width="64" height="64"></iconify-icon>
         </div>
     </footer>
 </body>
