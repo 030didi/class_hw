@@ -76,6 +76,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1440px;
+    min-height: 800px;
     display: flex;
     position: relative;
     padding: 40px 20px;
@@ -86,7 +87,6 @@ img {
 }
 
 .box1 {
-    max-width: 1440px;
     display: flex;
     position: relative;
     padding: 40px 20px;
@@ -136,10 +136,10 @@ span {
 /* 左半部 */
 #img_person {
     width: auto;
-    height: 800px;
+    height: 700px;
     position: absolute;
-    top: -200px;
-    left: -10px;
+    left: 30px;
+    bottom: 45px;
     background-repeat: no-repeat;
 }
 
@@ -155,23 +155,26 @@ span {
 button {
     padding: 6px 24px;
     display: inline-block;
-    border: none;
+    border: 2mm ridge rgba(148, 247, 209, 0.6);
+    /* 邊框造型 */
     border-radius: 50px;
     background: hsla（0, 100%, 50%, 0.5）;
-    margin: 0 0 16px 10px;
+    /* button透明度 */
+    margin: 0 10px -30px 10px;
     font-size: 14px;
 }
 
 .introduce {
     background: #629584;
     border-radius: 8px;
-    padding: 30px 20px;
+    padding: 10px 20px;
+    top: 50px;
     color: white;
     position: relative;
     overflow: hidden;
 }
 
-h1 {
+.introduce>h1 {
     font-size: 28px;
     margin: 0;
 }
@@ -179,6 +182,7 @@ h1 {
 .introduce>h4 {
     margin: 10px 0;
     font-family: Noto Serif TC, serif;
+    color: aquamarine;
 }
 
 .introduce>p {
