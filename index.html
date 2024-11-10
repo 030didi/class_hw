@@ -8,11 +8,15 @@
     <style>
         @import url(./css/index.css);
     </style>
+    <script src="./JS/jquery-3.7.1.js"></script>
     <script src="./JS/index.js"></script>
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 
 <body>
+    <!-- navbar -->
     <header>
         <div class="menu-links">
             <ul class="toggle-menu">
@@ -34,23 +38,58 @@
 
     </header>
 
-    <section id="Top" class="display">
-        <!-- 黑線區塊 -->
-        <div id="line1" class="black-line" style="top: 22px;"></div>
-        <div id="line2" class="black-line" style="top: 44px;"></div>
-        <!-- 其餘線條依需求加入 -->
-        <!-- 文字區塊 -->
-        <div class="words">
-            <div id="line9a" class="word-line" style="top: 0px;">Alfred Hitchcock's</div>
-            <div id="line9b" class="word-line" style="top: 0px;">Alfred Hitchcock's</div>
-            <div id="line9c" class="word-line" style="top: 0px;">Alfred Hitchcock's</div>
-            <div id="line9d" class="word-line" style="top: 0px;">PSYCHO</div>
-            <div id="line9e" class="word-line" style="top: 0px;">PSYCHO</div>
-            <div id="line9f" class="word-line" style="top: 0px;"></div>
-        </div>
-    </section>
-
     <main>
+        <!-- animation -->
+        <div class="animation">
+            <div id="line1" class="black-line" style="top: 22px;"></div>
+            <div id="line2" class="black-line" style="top: 44px;"></div>
+            <div id="line3" class="black-line" style="top: 66px;"></div>
+            <div id="line4" class="black-line" style="top: 88px;"></div>
+            <div id="line5" class="black-line" style="top: 110px;"></div>
+            <div id="line6" class="black-line" style="top: 132px;"></div>
+            <div id="line7" class="black-line" style="top: 154px;"></div>
+            <div id="line8" class="black-line" style="top: 176px;"></div>
+            <div id="line9" class="black-line" style="top: 198px;"></div>
+            <div class="words">
+                <div id="line9a" class="word-line" style="top:0px;">
+                    Hollow
+                </div>
+                <div id="line9b" class="word-line" style="top:0px;">
+                    Hollow
+                </div>
+                <div id="line9c" class="word-line" style="top:0px;">
+                    Hollow
+                </div>
+            </div>
+            <div id="line10" class="black-line" style="top: 220px;"></div>
+            <div id="line11" class="black-line" style="top: 242px;"></div>
+            <div id="line12" class="black-line" style="top: 264px;"></div>
+            <div id="line13" class="black-line" style="top: 286px;"></div>
+            <div id="line14" class="black-line" style="top: 308px;"></div>
+            <div id="line15" class="black-line" style="top: 330px;"></div>
+            <div id="line16" class="black-line" style="top: 352px;"></div>
+            <div id="line17" class="black-line" style="top: 374px;"></div>
+            <div id="line18" class="black-line" style="top: 396px;"></div>
+            <div id="line19" class="black-line" style="top: 418px;"></div>
+            <div id="line20" class="black-line" style="top: 440px;"></div>
+            <div id="line22" class="black-line" style="top: 352px;"></div>
+            <div id="line24" class="black-line" style="top: 374px;"></div>
+            <div id="line25" class="black-line" style="top: 396px;"></div>
+            <div id="line26" class="black-line" style="top: 418px;"></div>
+            <div id="line28" class="black-line" style="top: 440px;"></div>
+            <div class="words">
+                <div id="line9d" class="word-line" style="top:0px;">
+                    Fish
+                </div>
+                <!--new word is 9d+9f+9b+9e-->
+                <div id="line9e" class="word-line" style="top:0px;">
+                    Fish
+                </div>
+                <div id="line9f" class="word-line" style="top:0px;"></div>
+
+            </div>
+        </div>
+
         <article id="about-me" class="article1">
             <section class="box1">
                 <img id="img_person" src="./img/4.jpg" alt="淑女">
@@ -89,40 +128,34 @@
                     </div>
                     <!-- 狀態欄 -->
                     <div class="style1">狀態值：</div>
-                    <ur class="base">
+                    <div class="base">
 
-                        <div class="skill-bar-container">
-                            <li>
-                                <div class="skill-bar">
-                                    <div class="content">
-                                        <p>搞耍</p>
-                                        <p>87%</p>
-                                    </div>
+                        <div class="skill-bar-container1">
+                            <div class="skill-bar1">
+                                <div class="content">
+                                    <p>搞耍</p>
+                                    <p>87%</p>
                                 </div>
-                            </li>
+                            </div>
                         </div>
-                        <div class="skill-bar-container">
-                            <li>
-                                <div class="skill-bar">
-                                    <div class="content">
-                                        <p>躺平</p>
-                                        <p>80%</p>
-                                    </div>
+                        <div class="skill-bar-container2">
+                            <div class="skill-bar2">
+                                <div class="content">
+                                    <p>躺平</p>
+                                    <p>80%</p>
                                 </div>
-                            </li>
+                            </div>
                         </div>
-                        <div class="skill-bar-container">
-                            <li>
-                                <div class="skill-bar">
-                                    <div class="content">
-                                        <p>社畜</p>
-                                        <p>∞</p>
-                                    </div>
+                        <div class="skill-bar-container3">
+                            <div class="skill-bar3">
+                                <div class="content">
+                                    <p>社畜</p>
+                                    <p>∞</p>
                                 </div>
-                            </li>
+                            </div>
                         </div>
 
-                    </ur>
+                    </div>
                     <!-- 座右銘 -->
                     <div class="style2">
                         <span>盧氏宣言：</span>
@@ -191,7 +224,7 @@
                     </div>
             </section>
 
-            <section>
+            <!-- <section>
                 <div class="experience-list">
                     <div class="experience-item">
                         <img src="./img/project2.JPG" alt="Project Image">
@@ -204,9 +237,9 @@
                             </p>
                         </div>
                     </div>
-            </section>
+            </section> -->
 
-            <section>
+            <!-- <section>
                 <div class="experience-list">
                     <div class="experience-item">
                         <img src="" alt="Project Image">
@@ -218,8 +251,8 @@
                             </p>
                         </div>
                     </div>
-            </section>
-
+            </section> -->
+            <!-- 
             <section>
                 <div class="experience-list">
                     <div class="experience-item">
@@ -232,22 +265,25 @@
                             </p>
                         </div>
                     </div>
-            </section>
+            </section> -->
         </article>
         <a href="#Top" class="top">
             <iconify-icon icon="fluent-emoji-high-contrast:top-arrow" width="64" height="64"></iconify-icon>
         </a>
     </main>
 
-    <footer id="contact-me" class="section">
-        <p>@2024盧品諭製作 <span class="contentme">Contact Me</span></p>
-        <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=100006425307388">
-                <iconify-icon icon="devicon:facebook" width="50" height="50"></iconify-icon>
-            </a>
-            <a href="https://www.instagram.com/bl_sama19487/">
-                <iconify-icon icon="skill-icons:instagram" width="50" height="50"></iconify-icon>
-            </a>
+    <footer id="contact-me">
+        <p style="margin: auto;">@2024盧品諭製作 </p>
+        <div class="social-link">
+            <span class="contact-me">Contact Me</span>
+            <div style="display: flex; align-items: center;">
+                <a href="https://www.facebook.com/profile.php?id=100006425307388">
+                    <iconify-icon icon="devicon:facebook" width="50" height="50"></iconify-icon>
+                </a>
+                <a href="https://www.instagram.com/bl_sama19487/">
+                    <iconify-icon icon="skill-icons:instagram" width="50" height="50"></iconify-icon>
+                </a>
+            </div>
         </div>
     </footer>
 </body>
