@@ -8,10 +8,10 @@
     <style>
         @import url(./css/index.css);
     </style>
+    <!-- 先引入jquery 再引入js-->
     <script src="./JS/jquery-3.7.1.js"></script>
     <script src="./JS/index.js"></script>
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
 
@@ -52,13 +52,13 @@
             <div id="line9" class="black-line" style="top: 198px;"></div>
             <div class="words">
                 <div id="line9a" class="word-line" style="top:0px;">
-                    Hollow
+                    Hola
                 </div>
                 <div id="line9b" class="word-line" style="top:0px;">
-                    Hollow
+                    Hola
                 </div>
                 <div id="line9c" class="word-line" style="top:0px;">
-                    Hollow
+                    Hola
                 </div>
             </div>
             <div id="line10" class="black-line" style="top: 220px;"></div>
@@ -79,11 +79,11 @@
             <div id="line28" class="black-line" style="top: 440px;"></div>
             <div class="words">
                 <div id="line9d" class="word-line" style="top:0px;">
-                    Fish
+                    Soy Lu Pin yu
                 </div>
                 <!--new word is 9d+9f+9b+9e-->
                 <div id="line9e" class="word-line" style="top:0px;">
-                    Fish
+                    Soy Lu Pin yu
                 </div>
                 <div id="line9f" class="word-line" style="top:0px;"></div>
 
@@ -116,11 +116,10 @@
                 </div>
             </section>
 
-
             <section class="box2">
                 <!-- 右側人物細項介紹 -->
                 <div class="about about_border">
-                    <div class="text text1">
+                    <div class="text1">
                         <h2>隸屬：資訊管理學系</h2>
                         <div class="lv">
                             <h2>Lv：二乙</h2>
@@ -128,48 +127,53 @@
                     </div>
                     <!-- 狀態欄 -->
                     <div class="style1">狀態值：</div>
+
                     <div class="base">
-
-                        <div class="skill-bar-container1">
-                            <div class="skill-bar1">
-                                <div class="content">
-                                    <p>搞耍</p>
-                                    <p>87%</p>
-                                </div>
+                        <div class="circle1">
+                            <div>
+                                搞耍<br>
+                                <progress-count id="progress1">0</progress-count>%
                             </div>
+                            <svg viewBox="0 0 100 100" width="100" height="100">
+                                <circle cx="50" cy="50" r="47" fill="none" stroke="#000" />
+                            </svg>
                         </div>
-                        <div class="skill-bar-container2">
-                            <div class="skill-bar2">
-                                <div class="content">
-                                    <p>躺平</p>
-                                    <p>80%</p>
-                                </div>
+                        <div class="circle2">
+                            <div>
+                                躺平<br>
+                                <progress-count id="progress2">0</progress-count>%
                             </div>
+                            <svg viewBox="0 0 100 100" width="100" height="100">
+                                <circle cx="50" cy="50" r="47" fill="none" stroke="#000" />
+                            </svg>
                         </div>
-                        <div class="skill-bar-container3">
-                            <div class="skill-bar3">
-                                <div class="content">
-                                    <p>社畜</p>
-                                    <p>∞</p>
-                                </div>
+                        <div class="circle3">
+                            <div>
+                                社畜<br>
+                                <progress-count id="progress3">0</progress-count>%
                             </div>
+                            <svg viewBox="0 0 100 100" width="100" height="100">
+                                <circle cx="50" cy="50" r="47" fill="none" stroke="#000" />
+                            </svg>
                         </div>
-
                     </div>
+
                     <!-- 座右銘 -->
                     <div class="style2">
                         <span>盧氏宣言：</span>
+                        <br>
                         <span>解決不了問題，只好解決出問題的人！！</span>
                     </div>
+                    <br>
                     <!-- 技能skills -->
                     <div class="style1">技能屬性</div>
-                    <ul>
-                        <li>JAVA</li>
-                        <li>Python</li>
-                        <li>DIY</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
+                    <div class="ability">
+                        <div>JAVA</div>
+                        <div>Python</div>
+                        <div>HTML</div>
+                        <div>CSS</div>
+                        <div>DIY</div>
+                    </div>
                 </div>
             </section>
         </article>
@@ -224,7 +228,7 @@
                     </div>
             </section>
 
-            <!-- <section>
+            <section>
                 <div class="experience-list">
                     <div class="experience-item">
                         <img src="./img/project2.JPG" alt="Project Image">
@@ -237,9 +241,9 @@
                             </p>
                         </div>
                     </div>
-            </section> -->
+            </section>
 
-            <!-- <section>
+            <section>
                 <div class="experience-list">
                     <div class="experience-item">
                         <img src="" alt="Project Image">
@@ -251,8 +255,8 @@
                             </p>
                         </div>
                     </div>
-            </section> -->
-            <!-- 
+            </section>
+
             <section>
                 <div class="experience-list">
                     <div class="experience-item">
@@ -265,9 +269,9 @@
                             </p>
                         </div>
                     </div>
-            </section> -->
+            </section>
         </article>
-        <a href="#Top" class="top">
+        <a href="#Top" class="totop">
             <iconify-icon icon="fluent-emoji-high-contrast:top-arrow" width="64" height="64"></iconify-icon>
         </a>
     </main>
