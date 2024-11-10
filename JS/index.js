@@ -1,7 +1,7 @@
 // 開始畫面動畫
 document.addEventListener('DOMContentLoaded', () => {
     const changeText = () => {
-        document.getElementById('line9b').textContent = 'Soy Lu Pin yu'; // Change the text for line 9b
+        document.getElementById('line9b').textContent = 'Soy Lu Pin Yu'; // Change the text for line 9b
 
     };
 
