@@ -8,6 +8,10 @@
     <style>
         @import url(./css/index.css);
     </style>
+    <!-- 字體引入 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
     <!-- 先引入jquery 再引入js-->
     <script src="./JS/jquery-3.7.1.js"></script>
     <script src="./JS/index.js"></script>
@@ -128,6 +132,7 @@
                     <!-- 狀態欄 -->
                     <div class="style1">狀態值：</div>
 
+                    <!-- animation -->
                     <div class="base">
                         <div class="circle1">
                             <div>
@@ -178,6 +183,7 @@
             </section>
         </article>
 
+        <!-- animation -->
         <article id="skills">
             <h2>My Skills</h2>
             <section class="bar">
@@ -223,66 +229,158 @@
             </section>
         </article>
 
-        <article id="experience">
+        <article id="experience" class="Experience">
             <h2>Experience</h2>
-            <section>
-                <div class="experience-list">
-                    <div class="experience-item">
-                        <img src="./img/project1.jpeg" alt="Project Image">
-                        <div class="content">
-                            <h3>造夢者</h3>
+            <div class="box3">
+
+                <!-- 幻燈片1 -->
+                <section class="card">
+
+                    <!-- 最外層div -->
+                    <div class="slideshow-container1">
+                        <!-- photo1 -->
+                        <div class="singleSlide1 fade">
+                            <img src="./img/project1/1.png">
+                        </div>
+                        <!-- photo2 -->
+                        <div class="singleSlide1 fade">
+                            <img src="./img/project1/2.png">
+                        </div>
+                        <!-- photo3 -->
+                        <div class="singleSlide1 fade">
+                            <img src="./img/project1/3.png">
+                        </div>
+                        <!-- photo4 -->
+                        <div class="singleSlide1 fade">
+                            <img src="./img/project1/4.png">
+                        </div>
+                        <!-- photo5 -->
+                        <div class="singleSlide1 fade">
+                            <img src="./img/project1/5.png">
+                        </div>
+                        <!-- 按鈕 -->
+                        <button class=" prev" onclick="plusSlides1(-1)">⭠</button>
+                        <button class="next" onclick="plusSlides1(1)">⭢</button>
+                    </div>
+                    <div class="content">
+                        <h2>造夢者</h2>
+                        <div class="date-container">
                             <span class="style1">日期：2023/11/26</span>
-                            <p>
-                                第一次做志工，在假日去服務國小小朋友。運用微型處理器
-                                Micro-bit，帶出三個活動：寶藏躲貓貓、基本操作教學、電子音樂盒。透過這個活動，學生可以學習如何使用簡單的編程語言來創建互動性強大的項目，從而培養邏輯思考和問題解決的能力。
-                            </p>
+                            <a href="https://www.youtube.com/watch?v=OvUiFjcBuZ8">
+                                <iconify-icon icon="logos:youtube-icon" width="45" height="45"></iconify-icon>
+                            </a>
+                            <a
+                                href="https://www.canva.com/design/DAF2YKWl6bA/vGgTN8TQQ_iev5fxQUAduQ/edit?utm_content=DAF2YKWl6bA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><iconify-icon
+                                    icon="vscode-icons:file-type-powerpoint2" width="45" height="45"></iconify-icon></a>
+                            <a
+                                href="https://drive.google.com/file/d/1Gx0H-AGqij8RxgdRrW5tRZefLiNRoSLj/view?usp=sharing">
+                                <iconify-icon icon="vscode-icons:file-type-pdf2" width="45" height="45"></iconify-icon>
+                            </a>
+                            <a class="paper"
+                                href="https://drive.google.com/file/d/1Y3eQ_RCUF21xiMXThIVx0VGXhA1MQ6mY/view?usp=sharing">
+                                <iconify-icon icon="mdi:certificate-outline" width="45" height="45"></iconify-icon>
+                            </a>
                         </div>
+                        <p>
+                            這是我第一次組長，組織團隊參與志工服務，利用假日到國小帶領小朋友進行有趣的互動學習活動。我們使用微型處理器 Micro-bit
+                            設計了三項活動，包括「寶藏躲貓貓」遊戲、「基本操作教學」、以及「電子音樂盒」製作。在這些活動中，小朋友透過簡單的編程學習如何運用科技來創建互動項目，培養了他們的邏輯思考能力，提高問題解決的技巧。
+                        </p>
                     </div>
-            </section>
+                </section>
 
-            <section>
-                <div class="experience-list">
-                    <div class="experience-item">
-                        <img src="./img/project2.JPG" alt="Project Image">
-                        <div class="content">
-                            <h3>解決問題能力競賽：讓我們解決你</h3>
+                <!-- 幻燈片2 -->
+                <section class="card">
+
+                    <!-- 最外層div -->
+                    <div class="slideshow-container2">
+                        <!-- photo1 -->
+                        <div class="singleSlide2 fade">
+                            <img src="./img/project2/1.JPG">
+                        </div>
+                        <!-- photo2 -->
+                        <div class="singleSlide2 fade">
+                            <img src="./img/project2/2.JPG">
+                        </div>
+                        <!-- photo3 -->
+                        <div class="singleSlide2 fade">
+                            <img src="./img/project2/3.JPG">
+                        </div>
+                        <!-- photo4 -->
+                        <div class="singleSlide2 fade">
+                            <img src="./img/project2/4.JPG">
+                        </div>
+
+                        <!-- 按鈕 -->
+                        <button class=" prev" onclick="plusSlides2(-1)">⭠</button>
+                        <button class="next" onclick="plusSlides2(1)">⭢</button>
+                    </div>
+                    <div class="content">
+                        <h2>解決問題能力競賽：讓我們解決你</h2>
+                        <div class="date-container">
                             <span class="style1">日期：2024/9/25</span>
-                            <p>隨著科技與醫療高速進步，整個世界邁入高齡化社會；年齡的增長，長者的身體機能逐漸退化，獨居且行動不便的長者對於孤獨感的議題愈發需要正視，此議題正在當今社會逐漸浮出水面，我們Z世代(
-                                1997 ～
-                                2009年出生)在未來勢必得面對更強大的海浪向我們襲來。因此，我們團隊「讓我們來解決你」，集思廣益運用現在正在發展的擴增實境（AR）和虛擬現實（VR）混合實境技術，為行動不便者、身心障礙者以及獨居的高齡者提供解決方案。透過虛實結合的科技技術，我們將無法外出的長者與親友的外出旅遊相連結，讓在家無法外出的長者也能享受到旅遊的樂趣。
-                            </p>
-                        </div>
-                    </div>
-            </section>
+                            <a href="https://www.youtube.com/watch?v=LzKyHGfc2jQ">
+                                <iconify-icon icon="logos:youtube-icon" width="45" height="45"></iconify-icon>
+                            </a>
+                            <a
+                                href="https://www.canva.com/design/DAGOfwDbdFA/UxZ2RAwvwufKSd3oAIeyww/edit?utm_content=DAGOfwDbdFA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><iconify-icon
+                                    icon="vscode-icons:file-type-powerpoint2" width="45" height="45"></iconify-icon>
+                            </a>
+                            <a
+                                href="https://drive.google.com/file/d/1t-ZbXTtw8_6SWD3P5wM7bZyR8eJ20wT0/view?usp=sharing">
+                                <iconify-icon icon="vscode-icons:file-type-pdf2" width="45" height="45"></iconify-icon>
+                            </a>
+                            <a class="ad"
+                                href="https://drive.google.com/file/d/1OGLWr-_b8EBJ57ccq7Z1XCC5_RVHSbzK/view?usp=sharing">
+                                <iconify-icon icon="teenyicons:google-ad-outline" width="45" height="45"></iconify-icon>
+                            </a>
 
-            <section>
-                <div class="experience-list">
-                    <div class="experience-item">
-                        <img src="" alt="Project Image">
-                        <div class="content">
-                            <h3>物聯網醫學專題</h3>
-                            <span class="style1">日期：現在進行式</span>
-                            <p>本研究旨在利用 YOLOv8-OBB 模型精確標示環口片中牙齒的缺口路徑。首先將具有缺牙的環口片進行影像前處理，包含高斯模糊處理及邊緣檢測，再來透過該 YOLO
-                                模型判斷牙齒缺損區域，並結合周圍健康牙齒的像素位置信息，分析出缺牙處的最佳植牙路徑，為後續的植牙手術提供有效的輔助決策工具。此技術在病人初診時，可於短時間內生成適合的植牙路徑，提供一初步治療之方向。
-                            </p>
                         </div>
+                        <p>隨著科技與醫療高速進步，整個世界邁入高齡化社會；年齡的增長，長者的身體機能逐漸退化，獨居且行動不便的長者對於孤獨感的議題愈發需要正視，此議題正在當今社會逐漸浮出水面，我們Z世代(
+                            1997 ～
+                            2009年出生)在未來勢必得面對更強大的海浪向我們襲來。因此，我們團隊「讓我們來解決你」，集思廣益運用現在正在發展的擴增實境（AR）和虛擬現實（VR）混合實境技術，為行動不便者、身心障礙者以及獨居的高齡者提供解決方案。透過虛實結合的科技技術，我們將無法外出的長者與親友的外出旅遊相連結，讓在家無法外出的長者也能享受到旅遊的樂趣。
+                        </p>
                     </div>
-            </section>
+                </section>
 
-            <section>
-                <div class="experience-list">
-                    <div class="experience-item">
-                        <img src="" alt="Project Image">
-                        <div class="content">
-                            <h3>手做DIY作品</h3>
-                            <span class="style1">日期：某時某刻開始做</span>
-                            <p>
-                                利用毛線編織成娃娃/杯墊，還在努力晉身成為毛線藝術家。
-                            </p>
+                <!-- 幻燈片3 -->
+                <section class="card">
+
+                    <!-- 最外層div -->
+                    <div class="slideshow-container3">
+                        <!-- photo1 -->
+                        <div class="singleSlide3 fade">
+                            <img src="./img/project3/3.JPG">
                         </div>
+                        <!-- photo2 -->
+                        <div class="singleSlide3 fade">
+                            <img src="./img/project3/2.PNG">
+                        </div>
+                        <!-- photo3 -->
+                        <div class="singleSlide3 fade">
+                            <img src="./img/project3/1.jpg">
+                        </div>
+                        <!-- photo4 -->
+                        <div class="singleSlide3 fade">
+                            <img src="./img/project3/4.jpeg">
+                        </div>
+
+                        <!-- 按鈕 -->
+                        <button class=" prev" onclick="plusSlides3(-1)">⭠</button>
+                        <button class="next" onclick="plusSlides3(1)">⭢</button>
                     </div>
-            </section>
+                    <div class="content">
+                        <h2>手做DIY作品</h2>
+                        <span class="style1">日期：某時某刻開始做</span>
+                        <p>
+                            利用各種色彩豐富的毛線，透過鉤針編織技法創作出可愛的娃娃和實用的杯墊。從最基礎的長針、短針、鎖針開始學習，逐漸掌握複雜的編織花樣和立體造型技巧。雖然過程中常遇到編織失誤需要拆掉重來，但看著作品一點一點在指尖下成形的過程十分有成就感。希望能創作出更多獨特且富有個人風格的作品，朝著毛線藝術家的目標邁進。
+                        </p>
+                    </div>
+
+                </section>
+            </div>
         </article>
+
+
         <a href="#Top" class="totop">
             <iconify-icon icon="fluent-emoji-high-contrast:top-arrow" width="64" height="64"></iconify-icon>
         </a>

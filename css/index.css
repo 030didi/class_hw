@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-style: normal;
 }
 
 
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     color: #333;
 }
@@ -336,6 +337,8 @@ img {
 /* --------------------animation-------------------------------- */
 
 
+/* ------------------------自介--------------------- */
+
 .article1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -376,18 +379,15 @@ h3 {
 
 h4 {
     margin: 0;
-    font-family: 微軟正黑體;
 }
 
 p {
     margin: 0;
-    font-family: 微軟正黑體;
     font-size: 14px;
 }
 
 span {
     font-size: 14px;
-    font-family: 微軟正黑體;
 }
 
 /* 左半部 */
@@ -410,7 +410,7 @@ span {
     align-items: flex-start;
 }
 
-button {
+.box1 button {
     padding: 6px 24px;
     display: inline-block;
     border: 2mm ridge rgba(148, 247, 209, 0.6);
@@ -439,7 +439,6 @@ button {
 
 .introduce>h4 {
     margin: 10px 0;
-    font-family: Noto Serif TC, serif;
     color: rgb(27, 55, 46);
 }
 
@@ -456,14 +455,12 @@ button {
 
 .tag li {
     display: inline-block;
-    font-family: 微軟正黑體;
     padding-right: 16px;
     font-size: 14px;
 }
 
 .tag h5 {
     margin: 0;
-    font-family: 微軟正黑體;
     font-size: 12px;
     margin-bottom: 10px;
 }
@@ -483,15 +480,14 @@ button {
 /* 背景 */
 .about {
     background-color: #F5E9E9;
-    padding: 24px 30px;
+    padding: 24px 50px;
     position: relative;
     overflow: hidden;
 
 }
 
 .about_border {
-    top: 0;
-    left: 0;
+    left: -50px;
     width: 99.2%;
     height: 99.4%;
     border: solid 3px #A08C97;
@@ -552,7 +548,6 @@ about.h2 {
 .circle1 div {
     font-weight: bold;
     font-size: 25px;
-    font-family: sans-serif;
 }
 
 .circle1 circle {
@@ -582,7 +577,6 @@ about.h2 {
 .circle2 div {
     font-weight: bold;
     font-size: 25px;
-    font-family: sans-serif;
 }
 
 .circle2 circle {
@@ -612,7 +606,6 @@ about.h2 {
 .circle3 div {
     font-weight: bold;
     font-size: 25px;
-    font-family: sans-serif;
 }
 
 .circle3 circle {
@@ -662,13 +655,14 @@ about.h2 {
 /*---------------------------skills 進度條------------------------- */
 #skills {
     padding: 150px;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
     background-color: #F5F1F1;
     margin: 0 auto;
 }
 
 .bar {
+    padding-top: 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     display: grid;
@@ -845,6 +839,146 @@ about.h2 {
 }
 
 /*----------------------------------------------------------- */
+
+/*---------------------------Experience-------------------- */
+#experience {
+    padding: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F5F1F1;
+    margin: 0 auto;
+}
+
+.box3 {
+    grid-template-rows: auto auto auto;
+    display: grid;
+}
+
+.card {
+    padding: 20px;
+    margin: 20px 0px;
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(58, 101, 107, 0.5), rgba(158, 251, 214, 0.5)),
+        url("../img/backgroung1.png");
+    background-size: cover;
+    color: #C4DAD2;
+    grid-template-columns: 1fr 2fr;
+    display: flex;
+    gap: 20px;
+}
+
+/* -----------------------幻燈片------------- */
+.slideshow-container1,
+.slideshow-container2,
+.slideshow-container3 {
+    max-width: 400px;
+    margin: auto;
+}
+
+.singleSlide {
+    display: flex;
+}
+
+.Experience img {
+    height: 100%;
+    max-width: 190px;
+    object-fit: cover;
+}
+
+.singleSlide3 img {
+    max-width: 190px;
+    left: 0;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    border: transparent solid 1px;
+    cursor: pointer;
+    width: auto;
+    padding: 10px;
+    color: black;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    border: transparent solid 1px;
+    cursor: pointer;
+    width: auto;
+    padding: 10px;
+    color: black;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(61, 61, 61) !important;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* --------------------------------------- */
+
+/* ------------------------內容------------------------ */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.content .date-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* 控制日期和圖標之間的間距 */
+}
+
+.content span {
+    margin-bottom: 10px;
+    color: #243642;
+}
+
+.content .style1 {
+    margin-bottom: 15px;
+}
+
+.content p {
+    margin: 0;
+    text-align: left;
+}
+
+.paper {
+    color: rgb(186, 170, 25);
+}
+
+.paper:hover {
+    color: rgb(238, 226, 115);
+}
+
+.ad {
+    color: rgb(39, 75, 109);
+}
+
+.ad:hover {
+    color: rgb(90, 161, 227);
+}
+
+/*---------------------------------------------------------- */
 
 
 /* -----------回首頁top---------- */
